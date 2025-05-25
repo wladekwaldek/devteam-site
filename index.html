@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevTeam — Интернет-приложения под ключ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">DevTeam</h1>
+        <button id="menu-btn" class="md:hidden">☰</button>
+        <nav class="hidden md:block">
+          <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-blue-500">О нас</a></li>
+            <li><a href="#projects" class="hover:text-blue-500">Проекты</a></li>
+            <li><a href="#services" class="hover:text-blue-500">Услуги</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <ul class="space-y-2">
+          <li><a href="#about" class="block hover:text-blue-500">О нас</a></li>
+          <li>
+            <a href="#projects" class="block hover:text-blue-500">Проекты</a>
+          </li>
+          <li>
+            <a href="#services" class="block hover:text-blue-500">Услуги</a>
+          </li>
+          <li>
+            <a href="#contact" class="block hover:text-blue-500">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="bg-blue-600 text-white text-center py-20">
+      <h2 class="text-4xl font-bold mb-4">
+        Создаем современные интернет-приложения
+      </h2>
+      <p class="text-xl">
+        От идеи до запуска — ваш надежный технический партнер
+      </p>
+    </section>
+
+    <section id="about" class="max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-3xl font-semibold mb-6">О нас</h3>
+      <p>
+        Мы — команда опытных разработчиков, дизайнеров и проектных менеджеров.
+        Работаем с 2018 года. Наша миссия — создавать качественные веб-продукты,
+        которые приносят реальную пользу бизнесу.
+      </p>
+    </section>
+
+    <section id="projects" class="bg-gray-100 py-16 px-4">
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-3xl font-semibold mb-6">Проекты</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white shadow rounded p-4">
+            <h4 class="font-bold">CRM-система</h4>
+            <p class="text-sm text-gray-600">
+              Для автоматизации продаж и управления клиентами
+            </p>
+          </div>
+          <div class="bg-white shadow rounded p-4">
+            <h4 class="font-bold">Маркетплейс</h4>
+            <p class="text-sm text-gray-600">
+              Платформа для торговли между пользователями
+            </p>
+          </div>
+          <div class="bg-white shadow rounded p-4">
+            <h4 class="font-bold">Онлайн-образование</h4>
+            <p class="text-sm text-gray-600">
+              Платформа для проведения курсов и вебинаров
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="max-w-5xl mx-auto py-16 px-4">
+      <h3 class="text-3xl font-semibold mb-6">Услуги</h3>
+      <ul class="list-disc ml-5 space-y-2">
+        <li>Разработка веб-приложений под ключ</li>
+        <li>UI/UX дизайн</li>
+        <li>Frontend и Backend разработка</li>
+        <li>Интеграции с API и внешними сервисами</li>
+        <li>Сопровождение и поддержка проектов</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="bg-blue-600 text-white py-16 text-center px-4">
+      <h3 class="text-3xl font-semibold mb-6">Свяжитесь с нами</h3>
+      <p class="mb-4">Оставьте заявку и мы перезвоним в течение дня</p>
+      <a
+        href="mailto:hello@devteam.ru"
+        class="bg-white text-blue-600 font-bold py-2 px-6 rounded"
+        >Написать нам</a
+      >
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center p-4">
+      <p>© 2025 DevTeam. Все права защищены.</p>
+    </footer>
+
+    <script>
+      document.getElementById("menu-btn").addEventListener("click", () => {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
